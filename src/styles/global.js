@@ -70,6 +70,17 @@ export const reset = css`
       scroll-behavior: auto !important;
     }
   }
+  th {
+    background-color: #072f4e;
+    color: white;
+  }
+  tr:nth-of-type(odd) {
+    background-color: #6a9cde;
+  }
+  
+  tr:nth-of-type(even) {
+    background-color: #cadffb;
+  }
 `;
 
 export const global = css`

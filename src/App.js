@@ -1,6 +1,5 @@
 import { searchUsers } from "./services/users";
 import styled from "@emotion/styled";
-import Button from "./components/Button";
 import { useState, useEffect } from "react";
 import UserList from "./components/UserList";
 import SearchForm from "./components/SearchForm";
@@ -31,6 +30,10 @@ const Container = styled.div`
   align-items: center;
 `;
 
+const Title = styled.h1`
+  margin-bottom: 10px;
+`;
+
 function App() {
   const [users, setUsers] = useState([]);
 
@@ -42,9 +45,8 @@ function App() {
 
   return (
     <Container>
-      <h1>Lista</h1>
+      <Title>Lista de Usuarios</Title>
       <SearchForm onSubmit={getUsers} />
-      <Button />
       <UserList users={users} />
     </Container>
   );

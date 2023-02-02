@@ -7,6 +7,7 @@ const Form = styled.form`
   display: flex;
   gap: 8px;
   width: 100%;
+  margin-bottom: 16px;
 `;
 function SearchForm({ onSubmit }) {
   const [searchTerm, setSearchTerm] = useState("");
