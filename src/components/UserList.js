@@ -1,6 +1,7 @@
 import User from "./User";
 import styled from "@emotion/styled";
 
+//Formating the th tag of the table tag
 const HeadColumn = styled.th`
   border-radius: 4px;
   padding: 10px;
@@ -13,6 +14,7 @@ const HeadColumn = styled.th`
 
 function UserList({ users }) {
   return (
+    //Creating the structure of the table 
     <table>
       <thead>
         <tr>

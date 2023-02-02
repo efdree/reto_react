@@ -4,10 +4,12 @@ import { useState, useEffect } from "react";
 import UserList from "./components/UserList";
 import SearchForm from "./components/SearchForm";
 
+// Parse each user of the users
 function parseUsers(users) {
   return users.map((user) => parseUser(user));
 }
 
+// Parse each user with their characteristics or attributes
 function parseUser(user) {
   const { name, dob, gender, email, nat, picture } = user;
   return {
@@ -20,6 +22,7 @@ function parseUser(user) {
   };
 }
 
+// Formating the div tag
 const Container = styled.div`
   padding: 16px;
   max-width: 480px;
@@ -30,6 +33,7 @@ const Container = styled.div`
   align-items: center;
 `;
 
+// Formating the h1 tag
 const Title = styled.h1`
   margin-bottom: 10px;
 `;
@@ -37,6 +41,7 @@ const Title = styled.h1`
 function App() {
   const [users, setUsers] = useState([]);
 
+  // Managing the synchronization of the result with async_await
   async function getUsers(query) {
     const data = await searchUsers(query);
     const users = parseUsers(data.results);

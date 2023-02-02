@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 
+// Formating the td tag of the table tag
 const Row = styled.td`
   border-radius: 4px;
   padding: 10px;
@@ -9,6 +10,7 @@ const Row = styled.td`
   text-align: center;
 `;
 
+// Formating the img tag
 const Thumbnail = styled.img`
 width: 100px;
 border-radius: 50%;

@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 
+// Formating the input tag
 const StyledInput = styled.input`
   border-radius: 6px;
   padding: 8px 12px;

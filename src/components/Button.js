@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 
+// Formating the button tag
 const Button = styled.button`
   padding: 8px 16px;
   background: #757575;
